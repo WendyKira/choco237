@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(9, 83, 25);
+    font-family: Arial, sans-serif;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.pharmacy-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 7px;
+}
+
+.cross {
+    fill: #21a598;
+    stroke: #28b19a;
+    stroke-width: 4;
+    transform-origin: center;
+    animation: rotate 3s linear infinite, fadeIn 3s ease-in-out forwards;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.logo-text {
+    font-size: 50px;
+    color: #2baa9b;
+    font-weight: bolder;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+h1{
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+label{ 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+}
+input {
+    width: 100%;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;
+    padding: 2px;
+}
+button[type="submit"]{
+    width: 100%;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    display: block;
+    margin-top: 15px;
+    background-color: gray;
+    color: white;
+    border: 0px solid gray;
+    cursor: pointer;
+}
+p{
+    text-align: center;
+    margin: 3px 0;
+    font-size: 20px;
+}
+p a{
+    text-decoration: 0;
+    color: dodgerblue;
+}
+p a:hover{
+    text-decoration: underline;
+}

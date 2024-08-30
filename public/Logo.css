@@ -1,0 +1,44 @@
+/* Styles de base */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 2;
+    background-color: #052b1f;
+    font-family: Arial, sans-serif;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.pharmacy-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.cross {
+    fill: #11b3a2;
+    stroke: #19b198;
+    stroke-width: 3;
+    transform-origin: center;
+    animation: rotate 5s linear infinite, fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.logo-text {
+    font-size: 50px;
+    color: #1e9789;
+    font-weight: bold;
+}
