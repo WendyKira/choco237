@@ -3,32 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guide d'utilisation pour les clients de la pharmacie</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Guide</title>
+    <link rel="stylesheet" href="Guide.css">
 </head>
 <body>
     <header>
         <h1>Guide d'utilisation pour les clients de la pharmacie</h1>
-        <nav>
-            <ul>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#commandes">Passer une commande</a></li>
-                <li><a href="#historique">Consulter l'historique des achats</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+     <form action="Accueil" method= "post">
+        @csrf 
+       <nav>
+          <button>Accueil</button>
+       </nav>
+     </form>
     </header>
 
-    <main>
+    <main> 
         <section id="introduction">
             <h2>Introduction</h2>
-            <p>Bienvenue dans notre guide d'utilisation destiné aux clients de notre pharmacie. Ce guide vous aidera à comprendre comment accéder à nos services, passer des commandes, consulter votre historique d'achats et nous contacter.</p>
+            <p>Bienvenue dans notre guide d'utilisation destiné aux clients de notre application. Ce guide vous aidera à comprendre les fonctionnalités de l'application qui vous sont destinés.</p>
         </section>
 
         <section id="services">
             <h2>Services</h2>
-            <p>Notre pharmacie offre une variété de services pour répondre à vos besoins :</p>
+            <p>Notre application offre une variété de services pour répondre à vos besoins :</p>
             <ul>
                 <li><strong>Conseils médicaux</strong> - Nos pharmaciens sont disponibles pour vous fournir des conseils sur les médicaments et les traitements.</li>
                 <li><strong>Vente de médicaments</strong> - Nous proposons une large gamme de médicaments sur ordonnance et en vente libre.</li>
@@ -63,15 +60,14 @@
             <h2>Contact</h2>
             <p>Pour toute question ou assistance, vous pouvez nous contacter :</p>
             <ul>
-                <li><strong>Téléphone :</strong> 01 23 45 67 89</li>
-                <li><strong>Email :</strong> contact@pharmacie.com</li>
-                <li><strong>Adresse :</strong> 123 Rue de la Santé, 75001 Paris</li>
+                <li><strong>Téléphone :</strong> 658547634 </li>
+                <li><strong>Email :</strong> wendynnama25@gmail.com </li>
             </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Pharmacie de la Santé. Tous droits réservés.</p>
+        <p>&copy; CAMPHARM </p>
     </footer>
 </body>
 </html>

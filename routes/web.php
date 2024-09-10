@@ -21,11 +21,29 @@ Route::get('Inscription', function () {
     return view('Inscription');
 });
 
-Route::get('Accueil', function () {
-    return view('Accueil');
+Route::post('Accueilrecep', function () {
+    return view('Accueilrecep');
 });
 
 Route::get('Guide', function () {
     return view('Guide');
 });
+
+Route::get('Conspharm', function () {
+    return view('Conspharm');
+});
+
+Route::get('Gerercom', function () {
+    return view('Gerercom');
+});
+
+Route::get('carte', function () {
+    return view('carte');
+});
+
+Route::get('pagerecep', function () {
+    return view('pagerecep');
+});
+
+
 

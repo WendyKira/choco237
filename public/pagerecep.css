@@ -1,0 +1,105 @@
+.logo-container {
+    text-align: center;
+}
+
+.pharmacy-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 7px;
+}
+
+.cross {
+    fill: #21a598;
+    stroke: #28b19a;
+    stroke-width: 4;
+    transform-origin: center;
+    animation: rotate 3s linear infinite, fadeIn 3s ease-in-out forwards;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.logo-text {
+    font-size: 50px;
+    color: #2baa9b;
+    font-weight: bolder;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.login-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(119, 218, 119);
+    border: none;
+    border-radius: 4px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: rgb(122, 214, 122);
+}
+
+.forgot-code {
+    margin-top: 15px;
+}
+
+.forgot-code a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-code a:hover {
+    text-decoration: underline;
+}

@@ -3,49 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion de Pharmacie</title>
-    <link rel="stylesheet" href="Accueil.css">
+    <title>Pharmacies à Yaoundé 5</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+     <style>
+        #macarte{
+            height: 400px;
+        }
+
+     </style>
 </head>
 <body>
-    <header>
-        <h1>MARQUISE</h1>
-    </header>
 
-    <main>
-        <section id="Guide">
-            <h2>Guide d'utilisation</h2>
-            <p>Vous avez de la peine à utiliser l'application? Consulter le guide.</p>
-            <a href="#" class="button">Guide</a>
-        </section>
+       <div id= "macarte" ></div>
 
-        <section id="Consulter pharmacie">
-            <h2>Consulter pharmacie</h2>
-            <p>Vous avez la possibilité d'accéder aux pharmacies de gardes et à leurs listes de medicaments disponibles en temps réel.</p>
-            <a href="#" class="button">Voir les pharmacies</a>
-        </section>
-
-        <section id="Commander">
-            <h2>Commande ton médicament</h2>
-            <p>Passez vos commandes avec la possibilité de payer en ligne et d'etre livré en fonction de votre position.</p>
-            <a href="#" class="button">Commande</a>
-        </section>
-
-        <section id="Pharmacien">
-            <h2>Gestion de la pharmacie</h2>
-            <p>Gere le stock des medicaments et les commandes des clients.</p>
-            <a href="#" class="button">Gérer la pharmacie</a>
-        </section>
-
-        <section id="Administrateur">
-            <h2>Gestion des utilisateur</h2>
-            <p>Ajouter, modifier ou supprimer des utilisateurs du systéme.</p>
-            <a href="#" class="button">Gérer les utilisateurs</a>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Gestion de Pharmacie</p>
-    </footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+     
+     <script>
+        var carte = L.map('macarte').setView([51.505, -0.09], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png' , {
+            attribution: 'données © <a  href="//osm.org/copyright">OpenStreetMap</a>/ODbL - rendu <a href="//openstreetmap.fr">OSM France>/a>',
+            minzoom: 1,
+            maxzoom: 20
+        }).addTo(carte);
+     </script>
 </body>
 </html>

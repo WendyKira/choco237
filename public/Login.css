@@ -1,7 +1,4 @@
-body {
-    background-color: rgb(9, 83, 25);
-    font-family: Arial, sans-serif;
-}
+
 
 .logo-container {
     text-align: center;
@@ -33,57 +30,75 @@ body {
 
 .logo-text {
     font-size: 50px;
-    color: #2baa9b;
+    color: #299286;
     font-weight: bolder;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-}
-h1{
-    padding: 10px;
-    text-align: center;
-    font-size: 30px;
-}
-label{ 
+body {
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
-    text-align: center;
-    margin-bottom: 10px;
-    display: flex;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
 }
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color:white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 50px;
+}
+
+h1 {
+    margin-bottom: 25px;
+    padding: 30px;
+}
+
+.form-group {
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
 input {
     width: 100%;
-    text-align: center;
-    width: 50%;
-    margin: auto;
-    display: block;
-    margin-bottom: 15px;
-    padding: 2px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
 }
-button[type="submit"]{
-    width: 100%;
-    text-align: center;
-    width: 50%;
-    margin: auto;
-    display: block;
-    margin-top: 15px;
-    background-color: gray;
-    color: white;
-    border: 0px solid gray;
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(84, 148, 84);
     cursor: pointer;
 }
+
+button:hover {
+    background-color: rgb(100, 176, 100);
+}
+
 p{
-    text-align: center;
-    margin: 3px 0;
     font-size: 20px;
 }
+
 p a{
     text-decoration: 0;
     color: dodgerblue;
 }
+
 p a:hover{
     text-decoration: underline;
 }
